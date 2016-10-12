@@ -1,0 +1,102 @@
+/*
+Theme Name : Theme Bem J Tif UBJ
+Theme URI : #Lorem ipsum Labore quis et fugiat in fugiat.
+Author : Felix Hariyanto
+Author URI : http://coratcoretfelix.wordpress.com
+Description : Theme ini untuk Bem J Tif Universitas Bhayangkara Jakarta Raya 
+ */
+
+body{
+	margin : 50px auto;
+	width : 80%;
+}
+
+a{
+	text-decoration: none;
+	color: rgb(72, 143, 217);
+}
+
+h1 a{
+	background-color: ;
+	padding: 5px;
+}
+
+h1{
+	margin-bottom: 0px;
+}
+
+li{
+	list-style: none;
+}
+
+nav li{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+h2{
+	margin-top: 0px;
+	padding-left: 5px;
+}
+
+header nav li{
+	font-size: 22px;
+	border: 2px solid #333;
+	padding: 3px;
+	color: #333;
+}
+
+header{
+	border-bottom: 3px solid #333;
+}
+
+footer{
+	border-top: 3px solid #333;
+}
+
+nav ul{
+	padding-left: 0px;
+}
+
+header nav,{
+	float: left;
+	width: 70%;
+}
+
+#search_form{
+	float: right;
+	margin-top: 20px;
+}
+
+.clear{
+	clear: both;
+}
+
+.sub_judul{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#main-page{
+	width: 80%;
+	margin: 0 auto;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+main, aside{
+	float: left;
+	margin-top: 30px;
+}
+
+main{
+	width: 75%;
+	margin-right: 5%;
+}
+
+aside{
+	width:20%;
+}

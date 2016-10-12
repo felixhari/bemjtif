@@ -5,44 +5,31 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title></title>
+        <link rel="icon" href="./images/favicon.ico">
         <link rel="stylesheet" href="style.css">
-        <style>
-        	h1{
-        		font-size: 50px;
-        	}
-
-        	#front-page{
-				text-align: center;
-			}
-
-
-        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     </head>
     <body>
-        
-		<div id="front-page">
-			<h1> Selamat Datang di Bem J Tif UBJ</h1>
-			<a href="<?php echo home_url('/blog') ?>">Menuju Blog</a>
-		</div>
-	<div id="custom_post">	
-	<?php 
+        <?php get_header();?>
+<?php include 'section.php' ?>
+<main>
+<div class="container">
+	<?php dynamic_sidebar('sidebar1'); ?>
+    <button class="btn btn-primary text-center">
+        <a href="http://bemjtifubj.or.id/profil/"> See More Here!</a>
+    </button>
+</div>
+</main>
 
-	$custom_post = new WP_Query('cat=1&posts_per_page=3');
+<?php include 'section2.php' ?>
 
-	if($custom_post -> have_posts()){
-		while ($custom_post->have_posts()) {
-			$custom_post->the_post(); ?>
-			<a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
-			<?php
-		}
-	}
+<div class="container">
+	<?php dynamic_sidebar('sidebar2'); ?>
+</div>
 
-	else{
-		echo "Tidak Ada Berita";
-	}
+<div class="clearfix"></div>
 
-	 ?>
-	</div>
+<?php get_footer(); ?> 
 
     </body>
 </html>
